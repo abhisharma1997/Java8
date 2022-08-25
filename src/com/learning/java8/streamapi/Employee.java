@@ -8,6 +8,23 @@ public class Employee {
     private String name;
     private String dept;
     private List<String> mobileNum;
+    private long sal;
+
+    public long getSal() {
+        return sal;
+    }
+
+    public void setSal(long sal) {
+        this.sal = sal;
+    }
+
+    public Employee(int id, String name, String dept, List<String> mobileNum, long sal) {
+        this.id = id;
+        this.name = name;
+        this.dept = dept;
+        this.mobileNum = mobileNum;
+        this.sal = sal;
+    }
 
     public Employee(int id, String name, String dept, List<String> mobileNum) {
         this.id = id;
@@ -34,6 +51,7 @@ public class Employee {
                 ", name='" + name + '\'' +
                 ", dept='" + dept + '\'' +
                 ", mobileNum=" + mobileNum +
+                ", sal=" + sal +
                 '}';
     }
 
